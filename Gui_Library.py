@@ -12,6 +12,7 @@ def get_zodiac(date,month):
     result.grid_forget()
     date = int(entry1.get())
     month = int(entry2.get())
+    #Zodiac dates
     if (month == 3 and date >= 21) or (month == 4 and date < 20):
         result = Label(root, text="YOUR ZODIAC SIGN IS ARIES", borderwidth=14, bg="white")
         result.config(font=("Britannic Bold", 18))
